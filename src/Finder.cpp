@@ -107,7 +107,9 @@ int Finder::runFinder()
     sendOptionToEngine("UCI_AnalyseMode", "true");
     sendOptionToEngine("MultiPV", to_string(Options::getMaxLines()));
     sendOptionToEngine("Threads", to_string(Options::getEngineThreads()));
-    sendToEngine("ucinewgame");
+    sendOptionToEngine("Syzygybases Path", "/Documents/chesstablebases/syzygy");
+	sendOptionToEngine("Probe Syzygybases", to_string(5));
+	sendToEngine("ucinewgame");
 
     sendToEngine("isready");
 

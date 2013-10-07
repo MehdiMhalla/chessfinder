@@ -27,17 +27,17 @@
 #include <utility>
 #include "Board.h"
 
-#define DEFAULT_MAX_LINES 8
+#define DEFAULT_MAX_LINES 5
 #define DEFAULT_PLAY_FOR WHITE
 #define DEFAULT_VERBOSE_LEVEL 0
-#define DEFAULT_HASHMAP_SIZE 4096
+#define DEFAULT_HASHMAP_SIZE 1024
 #define DEFAULT_PLAYFOR_MOVETIME_ 2500
 #define DEFAULT_PLAYAGAINST_MOVETIME_ 2000
 #define DEFAULT_OUTPUT_FILE ""
 #define DEFAULT_INPUT_FILE ""
 #define DEFAULT_STARTPOS "startpos"
-#define DEFAULT_ENGINE "stockfish"
-#define DEFAULT_PATH "/usr/local/bin"
+#define DEFAULT_ENGINE "stockfishsyzygy"
+#define DEFAULT_PATH "./."
 #define DEFAULT_TRESHOLD 100
 #define DEFAULT_MATE_EQUIV 100000
 #define DEFAULT_THREADS 4
